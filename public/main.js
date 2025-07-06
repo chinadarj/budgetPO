@@ -29,11 +29,14 @@ toggleAuthBtn.addEventListener('click', () => {
 // Fetch branches and populate the dropdown
 const loadBranches = async () => {
     try {
-        const response = await fetch(`${API_BASE}/api/branches`, {
-            headers: {
-                Authorization: `Bearer ${localStorage.getItem('authToken')}`,
-            },
-        });
+        const response = await fetch(`${API_BASE}/`, 
+            // {
+            // headers: {
+            //     Authorization: `Bearer ${localStorage.getItem('authToken')}`,
+            // },
+            // }
+    
+    );
         if (!response.ok) {
             throw new Error('Failed to load branches');
         }
@@ -53,7 +56,7 @@ const loadBranches = async () => {
 // Check authentication and load content
 const checkAuth = () => {
     const token = "token";
-    if (true) {
+    if (checkAuth) {
         authContainer.style.display = 'none';
         mainContent.style.display = 'block';
         loadBranches();
