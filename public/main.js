@@ -1,6 +1,6 @@
 // Set API base URL
-// const API_BASE = 'https://budget-4mvuv2ggo-chinadarjs-projects.vercel.app'; // Change this if backend is hosted elsewhere
-const API_BASE = 'http://localhost:3000'; // Change this if backend is hosted elsewhere
+const API_BASE = 'https://budget-po.vercel.app'; // Change this if backend is hosted elsewhere
+// const API_BASE = 'http://localhost:3000'; // Change this if backend is hosted elsewhere
 
 
 const loginForm = document.getElementById('login-form');
