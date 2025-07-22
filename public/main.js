@@ -1,5 +1,5 @@
 // Set API base URL
-const API_BASE = 'https://budget-po.vercel.app'; // Change this if backend is hosted elsewhere
+const API_BASE = 'https://budget-lemon-omega.vercel.app'; // Change this if backend is hosted elsewhere
 // const API_BASE = 'http://localhost:3000'; // Change this if backend is hosted elsewhere
 
 
@@ -29,12 +29,12 @@ toggleAuthBtn.addEventListener('click', () => {
 // Fetch branches and populate the dropdown
 const loadBranches = async () => {
     try {
-        const response = await fetch(`${API_BASE}/`, 
-            // {
-            // headers: {
-            //     Authorization: `Bearer ${localStorage.getItem('authToken')}`,
-            // },
-            // }
+        const response = await fetch(`${API_BASE}/api/branches`, 
+            {
+            headers: {
+                Authorization: `Bearer ${localStorage.getItem('authToken')}`,
+            },
+            }
     
     );
         if (!response.ok) {
